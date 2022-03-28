@@ -1,0 +1,15 @@
+INFO ABOUT THE FILES IN THIS FOLDER:
+------------------------------------
+- This folder contains the calculated periodograms for CARMENES GTO objects.
+- See "../../02_01_ETL/ETL_25_PoC_RV_File_Processing.ipynb" and "../../02_01_ETL/ETL_30_RV_File_Bulk_processing.ipynb" for additional details about the processing and its parameters.
+- Each FITS file contains the information of one CARMENES GTO object:
+	- Primary header:
+		- Header: contains basic information about the object.
+		- Data: <no data table present>
+	- RV HDU:
+		- Header: basic parameters of RV curve.
+		- Data: the RV curve points.
+	- Periodogram HDU:
+		- Header: basic results of the periodogram calculation.
+		- Data: the periodogram points.
+- The "figures" folder contain the periodogram plots for each one of the CARMENES GTO objects.
