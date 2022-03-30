@@ -1,7 +1,7 @@
 INFO ABOUT THE FILES IN THIS FOLDER:
 ------------------------------------
-- This folder contains the calculated periodograms for the radial velocity (RV) curves of CARMENES GTO objects.
-- See "../../02_01_ETL/ETL_25_PoC_RV_File_Processing.ipynb" and "../../02_01_ETL/ETL_30_RV_File_Bulk_processing.ipynb" for additional details about the processing and its parameters.
+- This folder contains the calculated periodograms for the available TESS light curves of CARMENES GTO objects.
+- See "../../02_01_ETL/ETL_35_PoC_TESS_LC_File_Processing.ipynb" and "../../02_01_ETL/ETL_40_TESS_LC_File_Bulk_processing.ipynb" for additional details about the processing and its parameters.
 - The "figures" folder contain the periodogram plots for each one of the CARMENES GTO objects.
 - Each FITS file contains the information of one CARMENES GTO object:
 	- [**NOTE: These FITS files are NOT in this remote repository. Contact the author if interested on them]
