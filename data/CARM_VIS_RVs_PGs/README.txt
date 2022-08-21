@@ -1,0 +1,16 @@
+INFO ABOUT THE FILES IN THIS FOLDER:
+------------------------------------
+- This folder contains the calculated periodograms for the radial velocity (RV) curves of CARM_VIS objects (CARMENES objects time series, NZP-Corrected, and wrong values discarded).
+- See "../../02_01_ETL/ETL_25_PoC_RV_File_Processing.ipynb" and "../../02_01_ETL/ETL_30_RV_File_Bulk_processing.ipynb" for additional details about the processing and its parameters.
+- The "figures" folder contain the periodogram plots for each one of the CARMENES GTO objects.
+- Each FITS file contains the information of one CARMENES GTO object:
+	- [**NOTE: These FITS files are NOT in this remote repository. Contact the author if interested on them]
+	- Primary header:
+		- Header: contains basic information about the object.
+		- Data: <no data table present>
+	- RV HDU:
+		- Header: basic parameters of RV curve.
+		- Data: the RV curve points.
+	- Periodogram HDU:
+		- Header: basic results of the periodogram calculation.
+		- Data: the periodogram points.

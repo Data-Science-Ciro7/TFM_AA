@@ -1,0 +1,16 @@
+INFO ABOUT THE FILES IN THIS FOLDER:
+------------------------------------
+- This folder contains the calculated periodograms for the available TESS light curves of CARM_VIS objects.
+- See "../../02_01_ETL/ETL_35_PoC_TESS_LC_File_Processing.ipynb" and "../../02_01_ETL/ETL_40_TESS_LC_File_Bulk_processing.ipynb" for additional details about the processing and its parameters.
+- The "figures" folder contain the periodogram plots for each one of the CARM_VIS objects which have a TESS light curve available
+- Each FITS file contains the information of one CARM_VIS object:
+	- [**NOTE: These FITS files are NOT in this remote repository. Contact the author if interested on them]
+	- Primary header:
+		- Header: contains basic information about the object.
+		- Data: <no data table present>
+	- RV HDU:
+		- Header: basic parameters of TESS light curve.
+		- Data: the TESS light curve points.
+	- Periodogram HDU:
+		- Header: basic results of the periodogram calculation.
+		- Data: the periodogram points.

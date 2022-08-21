@@ -9,8 +9,8 @@ INFO ABOUT THE FILES IN THIS FOLDER:
 		- Header: contains basic information about the object.
 		- Data: <no data table present>
 	- RV HDU:
-		- Header: basic parameters of RV curve.
-		- Data: the RV curve points.
+		- Header: basic parameters of TESS curve.
+		- Data: the TESS light curve points.
 	- Periodogram HDU:
 		- Header: basic results of the periodogram calculation.
 		- Data: the periodogram points.
