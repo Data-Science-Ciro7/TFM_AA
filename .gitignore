@@ -1,3 +1,10 @@
+
+CEM_code_snippets.txt
+Additional_LaTeX_files/
+code/
+img/
+docs/
+
 02_00_Admin_and_Technical_issues/
 02_01_ETL/.ipynb_checkpoints/
 02_01_ETL/auxiliary/
@@ -46,8 +53,11 @@
 02_06_MachineLearning/img/obsolete/
 02_06_MachineLearning/img/auxiliary/
 
-CEM_code_snippets.txt
 
-data/backup_folders/
+data/auxiliary/
+data/Auxiliary_data/
+data/backup_full_folders/
+data/huge_zip_files/
+data/obsolete/
 
-code/
+

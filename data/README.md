@@ -1,6 +1,6 @@
-**CONTENTS OF THE `data` FOLDER:
+**CONTENTS OF THE `data` FOLDER:**
 
-**Note:** the folders with their size shown in **bold text** are not directly available from _GitHub_. If interested in some specific data, please contact [ciro.emmanuel@dskyr.com](mailto:ciro.emmanuel@dskyr.com), indicating your affiliation and the purpose of use for the requested data.
+**Note:** only the original CARMENES RV time series and the Machine Learning results are available in _GitHub_. The folders with their size shown in **bold text** are not directly available from _GitHub_. If interested in some specific data, please contact [ciro.emmanuel@dskyr.com](mailto:ciro.emmanuel@dskyr.com), indicating your affiliation and the purpose of use for the requested data.
 
 **Files:**
 
@@ -23,7 +23,7 @@
 - `CARM_VIS_RVs.zip` (3.8 MB): CARMENES RV time series
   - Includes both raw (`*.avcn.dat`) and processed (`*.avc.dat`) RV time series.
 
-- `CARMENES_GTO_TESS_lc.zip` (951 MB): TESS photometric light curves available for some CARMENES stars.
+- `CARMENES_GTO_TESS_lc.zip` (**951 MB**): TESS photometric light curves available for some CARMENES stars.
 
 - `CARM_VIS_RVs_PGs.zip` (**7.9 GB**): periodogram results (GLS) for CARMENES RV time series.
   - Includes the frequency periodogram result files (`*.dat`) and figures (subfolder `figures`).
@@ -31,16 +31,16 @@
 - `CARM_VIS_TESS_PGs.zip` (**171 MB**): periodogram results (GLS) for TESS light curves.
   - Includes the frequency periodogram result files (`*.dat`) and figures (subfolder `figures`).
 
-- `S1_ForPG_RVs_PGs.zip` (77 MB): periodogram results (GLS) for $S1_{p}$ sample (300 synthetic stars, perfectly sampled and noiseless).
+- `S1_ForPG_RVs_PGs.zip` (**77 MB**): periodogram results (GLS) for $S1_{p}$ sample (300 synthetic stars, perfectly sampled and noiseless).
   - Includes the frequency periodogram result files (`*.dat`) and figures (subfolder `figures`).
 
-- `S2_ForPG_RVs_PGs.zip` (107 MB): periodogram results (GLS) for $S2_{p}$ sample (300 synthetic stars, perfectly sampled and with RV errors).
+- `S2_ForPG_RVs_PGs.zip` (**107 MB**): periodogram results (GLS) for $S2_{p}$ sample (300 synthetic stars, perfectly sampled and with RV errors).
   - Includes the frequency periodogram result files (`*.dat`) and figures (subfolder `figures`).
 
-- `S3_ForPG_RVs_PGs.zip` (78 MB): periodogram results (GLS) for $S3_{p}$ sample (300 synthetic stars, irregularly sampled and noiseless).
+- `S3_ForPG_RVs_PGs.zip` (**78 MB**): periodogram results (GLS) for $S3_{p}$ sample (300 synthetic stars, irregularly sampled and noiseless).
   - Includes the frequency periodogram result files (`*.dat`) and figures (subfolder `figures`).
 
-- `S4_ForPG_RVs_PGs.zip` (93 MB): periodogram results (GLS) for $S4_{p}$ sample (300 synthetic stars, irregularly sampled and with RV errors).
+- `S4_ForPG_RVs_PGs.zip` (**93 MB**): periodogram results (GLS) for $S4_{p}$ sample (300 synthetic stars, irregularly sampled and with RV errors).
   - Includes the frequency periodogram result files (`*.dat`) and figures (subfolder `figures`).
 
 - `CARM_VIS_RVs_WinFunc_PGs.zip` (**3.1 GB**): periodogram results (GLS) for the Window Functions of CARMENES RV time series.
