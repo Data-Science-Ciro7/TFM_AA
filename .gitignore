@@ -48,30 +48,6 @@
 
 CEM_code_snippets.txt
 
-data/CARMENES_GTO_RVs/
-data/CARM_VIS_RVs/
-data/CARMENES_GTO_TESS_lc/
+data/backup_folders/
 
-data/CARMENES_GTO_RVs_PGs/*.fits
-data/CARMENES_GTO_TESS_PGs/*.fits
-data/CARM_VIS_RVs_PGs/*.fits
-
-02_03_LSTperiod/GTO_TESS_LC_LSTperiod/*.dat
-02_03_LSTperiod/GTO_TESS_LC_LSTperiod/*.WRONG
-
-02_03_LSTperiod/GTO_CARMENES_RV_LSTperiod/*.dat
-02_03_LSTperiod/GTO_CARMENES_RV_LSTperiod/*.WRONG
-
-02_03_LSTperiod/CARMENES_All_RV_LSTperiod/*.dat
-02_03_LSTperiod/CARMENES_All_RV_LSTperiod/*.WRONG
-
-02_04_SyntheticDataset/RV_DATASETS/DS1_ts_files/*.dat
-02_04_SyntheticDataset/RV_DATASETS/DS2_ts_files/*.dat
-02_04_SyntheticDataset/RV_DATASETS/DS3_ts_files/*.dat
-02_04_SyntheticDataset/RV_DATASETS/DS4_ts_files/*.dat
-
-data/RV_DATASETS/DS1_ts_files/*.dat
-data/RV_DATASETS/DS2_ts_files/*.dat
-data/RV_DATASETS/DS3_ts_files/*.dat
-data/RV_DATASETS/DS4_ts_files/*.dat
-
+code/

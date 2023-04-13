@@ -1,0 +1,732 @@
+*carmencita.102*              Carmencita, the CARMENES input catalogue     (16.11.2021)
+
+Carmencita: CARMEN(ES) Cool dwarf Information and daTa Archive
+	Caballero J.A., Cortes-Contreras M., Cifuentes, C., Montes D., Luque R., 
+	Morales J.C., Abellan de Paco F. J., Alonso-Floriano F.J., Amado A., Bejar V.J.S., 
+	Brinkmoeller M., Diez-Alonso, E., Dorda R., Gallardo I., Gonzalez-Alvarez E., 
+	Gonzalez-Peinado R., Hidalgo D., Holgado G., Jeffers S.V, Kim M., 
+	Klutsch A., Lamert A., Llamas M., Lopez-Santiago J., Martinez-Rodriguez H., 
+	Mundt R., Passegger V.M., Perdelwitz V., Quirrenbach A., Reffert S., Reiners A., 
+	Ribas I., Shan Y., Sanz-Forcada J., Schoefer P., Seifert W., Wolthoff V., 
+	Zechmeister M. (et al.).
+
+
+*ADC_Keywords:* [to be added by the Astronomical Data Center]
+
+
+*Keywords:* astronomical databases: miscellaneous - stars: late-type - etc.
+
+
+*Abstract:*
+
+    CARMENES, the brand-new, Spanish-German, two-channel, ultra-stabilised, high-resolution
+    spectrograph at the 3.5 m Calar Alto telescope, started its science survey on 01 Jan
+    2016. In one shot, it covers from 0.52 to 1.71 mum with resolution R = 94,600 (lambda <
+    0.96 mum) and 80,400 (lambda > 0.96 mum). During guaranteed time observations, CARMENES
+    carries out the programme for which the instrument was designed: radial-velocity
+    monitoring of bright, nearby, low-mass dwarfs with spectral types between M0.0 V and
+    M9.5 V. Carmencita is the "CARMEN(ES) Cool dwarf Information and daTa Archive", our
+    input catalogue, from which we select the about 300 targets being observed during
+    guaranteed time. Besides that, Carmencita is perhaps the most comprehensive database of
+    bright, nearby M dwarfs ever built, as well as a useful tool for forthcoming exo-planet
+    hunters: ESPRESSO, HPF, IRD, SPIRou, TESS or even PLATO. Carmencita contains dozens of
+    parameters measured by us or compiled from the literature for about 2,200 M dwarfs in
+    the solar neighbourhood brighter than J = 11.5 mag: accurate coordinates, spectral
+    types, photometry from ultraviolet to mid-infrared, parallaxes and spectro-photometric
+    distances, rotational and radial velocities, Halpha pseudo-equivalent widths, X-ray
+    count rates and hardness ratios, close and wide multiplicity data, proper motions,
+    Galactocentric space velocities, metallicities, full references, homogeneously derived
+    astrophysical parameters, and much more. In my talk at Cool Stars 19, I explained how we
+    build Carmencita standing on the shoulders of giants and observing with 2-m class
+    telescopes, and produce a dozen MSc theses and several PhD theses in the process
+    (http://carmenes.caha.es).   
+
+
+*Description:*
+
+Carmencita is the CARMENES Cool dwarf Information and daTa Archive (Caballero et al. 2013, 2016). 
+It is an M dwarf database created to provide a selection of M dwarfs in the solar neighbourhood, 
+from which choosing the best targets that CARMENES will observe during Guaranteed Time Observations.
+Carmencita contains exactly 2206 M dwarfs with spectral types from M0.0 V to M9.5 V, from which 
+approximately 350 will be monitored with CARMENES in order to detect the signal of exoplanets. 
+All these stars are observable from Calar Alto (i.e., δ ≥ −23 deg) and satisfy a magnitude-spectral 
+type relation based on the 2MASS J-band magnitude and defined to select the brightest stars of each 
+spectral subtype. Moreover, none of them is fainter than 11.5 mag in the 2MASS J-band.
+
+
+*Acknowledging Carmencita in publications:*
+
+    Caballero et al. 2016csss.confE.148C
+    
+
+*File Summary:*
+
+       	File			Description
+
+	carmencita.readme.txt	This file
+	carmencita.log.txt	Record of changes in the catalogue
+	carmencita.NNN.csv	Carmencita, the CARMENES input catalogue (version NNN)
+
+					
+*See also:*
+
+VII/233			The Two Micron All-Sky Survey: Extended sources (Cutri+ 2003)					
+III/198			Palomar/MSU nearby star spectroscopic survey (Hawley+ 1997)
+J/AJ/142/138		All-sky catalog of bright M dwarfs (Lepine+, 2011)
+J/AJ/145/102		Bright M dwarfs in the northern sky spectroscopy (Lepine+, 2013)
+J/A+A/625/A68		Radii and masses of the CARMENES targets (Schweitzer+, 2019)
+I/345/gaia2		Gaia DR2 (Gaia Collaboration, 2018)
+I/350/gaiaedr3		Gaia EDR3 (Gaia Collaboration, 2020)
+J/A+A/577/A128		CARMENES input catalogue of M dwarfs. I (Alonso-Floriano+, 2015)
+J/A+A/597/A47 		CARMENES input catalogue of M dwarfs. II (Cortes-Contreras+ 2017)
+J/A+A/614/A76		CARMENES input catalogue of M dwarfs. III. (Jeffers+, 2018)
+J/A+A/621/A126		CARMENES input catalogue of M dwarfs. IV. (Diez Alonso+ 2019)
+J/A+A/642/A115		CARMENES input catalogue of M dwarfs. V. (Cifuentes+, 2020)
+J/A+A/652/A116		CARMENES input catalogue of M dwarfs. VI. (Perdelwitz+, 2021)
+	
+    
+*Description of file:* carmencita.NNN.csv
+
+(*) indicates that exist further remarks for that column after the table.
+
+   	Column	Label				Format	Units	Remarks	Description
+
+	1	Karmn				String	---	*	CARMENES star identification (JHHMMm+DDdAAA)
+	2	Name				String	---	*	Discovery or most common name
+	3	Comp				String	---	*	Component in multiple system
+	4	GJ				String	---		Gliese-Jahreiss number
+	5	RA_J2016_deg				Double	deg		Right ascension in sexagesimal units at epoch J2016.0 in equinox J2000
+	6	DE_J2016_deg				Double	deg		Declination in sexagesimal units at epoch J2016.0 in equinox J2000
+	7	RA_J2000				String	hms	*	Right ascension in decimal degrees at epoch J2000 in equinox J2000
+	8	DE_J2000				String	dms	*	Declination in decimal degrees at epoch J2000 in equinox J2000
+	9	l_J2016_deg				Double	deg		Galactic longitude at epoch J2016.0 in equinox J2000
+	10	b_J2016_deg				Double	deg		Galactic latitude at epoch J2016.0 in equinox J2000
+	11	Ref01				String	---		Reference for equatorial coordinates
+	12	SpT				String	---		Spectral type
+	13	SpTnum				Float	---	*	Spectral type in numerical format
+	14	Ref02				String	---		Reference for spectral type
+	15	Teff_K				Short	K		Effective temperature
+	16	eTeff_K				Float	K		Effective temperature error
+	17	logg				Float	---		Surface gravity
+	18	elogg				Float	---		Surface gravity error
+	19	[Fe/H]				Float	---		Metallicity
+	20	e[Fe/H]				Float	---		Metallicity error
+	21	Ref03				String	---		Reference for Teff, logg, [Fe/H]
+	22	L_Lsol				Double	Lsun	*	Luminosity
+	23	eL_Lsol				Double	Lsun		Luminosity error
+	24	Ref04				String	---		Reference for L_Lsol
+	25	R_Rsol				Double	Rsun	*	Stellar radius
+	26	eR_Rsol				Double	Rsun		Stellar radius error
+	27	Ref05				String	---		Reference for stellar radius
+	28	M_Msol				Double	Msun	*	Mass
+	29	eM_Msol				Double	Msun		Mass error
+	30	Ref06				String	---		Reference for mass
+	31	muRA_masa-1				Double	mas/yr		Proper motion in right ascension
+	32	emuRA_masa-1				Double	mas/yr		Proper motion error in right ascension
+	33	muDE_masa-1				Double	mas/yr		Proper motion in right declination
+	34	emuDE_masa-1				Double	mas/yr		Proper motion error in right declination
+	35	Ref07				String	---	*	Reference for proper motion
+	36	pi_mas				Double	mas		Parallax
+	37	epi_mas				Double	mas		Parallax error
+	38	Ref08				String	---	*	Reference for parallax
+	39	d_pc				Double	pc		Distance
+	40	ed_pc				Double	pc		Distance error
+	41	Ref09				String	---	*	Reference for distance
+	42	Vr_kms-1				Double	km/s		Radial velocity
+	43	eVr_kms-1				Double	km/s		Radial velocity error
+	44	Ref10				String	---	*	Reference for radial velocity
+	45	ruwe				Double	---	*	Renormalised unit weighted error from Gaia EDR3
+	46	Ref11				String	---		Reference for ruwe
+	47	U_kms-1				Float	km/s		U Galactocentric space velocity
+	48	eU_kms-1				Float	km/s		U Galactocentric space velocity error
+	49	V_kms-1				Float	km/s		V Galactocentric space velocity
+	50	eV_kms-1				Float	km/s		V Galactocentric space velocity error
+	51	W_kms-1				Float	km/s		W Galactocentric space velocity
+	52	eW_kms-1				Float	km/s		W Galactocentric space velocity error
+	53	Ref12				String	---		Reference for Galactocentric space velocities
+	54	sa_m/s/a				Double	m/s/a		Secular acceleration
+	55	esa_m/s/a				Double	m/s/a		Secular acceleration error
+	56	Ref13				String	---		Reference for secular acceleration
+	57	SKG				String	---		Stellar kinematic group membership
+	58	Ref14				String	---	*	Reference for SKG membership
+	59	SKG_lit				String	---		Stellar kinematic group membership in the literature
+	60	Ref14_lit				String	---		Reference in the literature for SKG membership
+	61	Pop				String	---		Stellar population
+	62	Ref15				String	---	*	Reference for stellar population
+	63	vsini_flag				String	---	*	Rotational velocity flag
+	64	vsini_kms-1				Float	km/s		Rotational velocity
+	65	evsini_kms-1				Float	km/s		Rotational velocity error
+	66	Ref16				String	---		Reference for rotational velocity
+	67	P_d				Double	d		Rotational (or cycle) period
+	68	eP_d				Double	d		Rotational (or cycle) period error
+	69	Ref17				String	---		Reference for rotational period
+	70	pEWalpha_A				Float	AA		Halpha pseudoequivalent width
+	71	epEWalpha_A				Float	AA		Halpha pseudoequivalent width error
+	72	Ref18				String	---		Reference for Halpha pseudoequivalent width
+	73	log(LHalpha/Lbol)				Float	---		Logaritm of the Halpha luminosity and bolometric luminosity ratio.
+	74	elog(LHalpha/Lbol)				Float	---		Error of the logaritm of the Halpha luminosity and bolometric luminosity ratio.
+	75	Ref19				String	---		Reference of the logaritm of the Halpha luminosity and bolometric luminosity ratio.
+	76	1RXS				String	---		ROSAT All-Sky Survey Catalogue source name
+	77	CRT_s-1				Double	count/s		Source count rate
+	78	eCRT_s-1				Double	count/s		Source count rate error
+	79	HR1				Float	---		Hardness ratio 1
+	80	eHR1				Float	---		HR1 error
+	81	HR2				Float	---		Hardness ratio 2
+	82	eHR2				Float	---		HR2 error
+	83	Flux_X_E-13_ergcm-2s-1				Float	E-13 erg/cm2/s		X-ray flux
+	84	eFlux_X_E-13_ergcm-2s-1				Float	E-13 erg/cm2/s		X-ray flux error
+	85	LX/LJ				Double	---		Ratio of X-ray and J-band luminosities
+	86	eLX/LJ				Float	---		Ratio of X-ray and J-band luminosities error
+	87	Ref20				String	---		Reference for X-ray emission. 1RXS = Voges et al. 1999; 1RXS* = Voges et al. 1999 non automatic search.
+	88	Activity				String	---		Boolean flare indicator
+	89	Ref21				String	---		Reference for flaring activity
+	90	FUV_mag				Float	mag		GALEX far-UV magnitude (134.4-178.6 nm)
+	91	eFUV_mag				Float	mag		GALEX far-UV magnitud error
+	92	NUV_mag				Float	mag		GALEX near-UV magnitude (177.1-283.1 nm)
+	93	eNUV_mag				Float	mag		GALEX near-UV magnitud error
+	94	Ref22				String	---		Reference for FUV and NUV magnitudes
+	95	u_mag				Float	mag		SDSS 2.5 m u magnitude (355.1 nm)
+	96	eu_mag				Float	mag		SDSS 2.5 m u magnitude error
+	97	Ref23				String	---		Reference for u magnitude
+	98	BT_mag				Float	mag		Tycho-2 BT magnitude
+	99	eBT_mag				Float	mag		Tycho-2 BT magnitude error
+	100	Ref24				String	---		Reference for Tycho-2 BT magnitude
+	101	B_mag				Float	mag	*	Johnson B magnitude (440 nm)
+	102	eB_mag				Float	mag		Johnson B magnitude error
+	103	Ref25				String	---		Reference for Johnson B magnitude
+	104	BP_mag				Float	mag		Gaia EDR3 integrated BP mean magnitude
+	105	eBP_mag				Float	mag		Standard error of BP mean magnitude (Vega) (as computed by CDS)
+	106	Ref26				String	---		Reference for BP magnitude
+	107	g_mag				Float	mag	*	SDSS 2.5 m g magnitude (468.6 nm)
+	108	eg_mag				Float	mag		SDSS 2.5 m g magnitude error
+	109	Ref27				String	---		Reference for g magnitude
+	110	VT_mag				Float	mag		Tycho-2 VT magnitude
+	111	eVT_mag				Float	mag		Tycho-2 VT magnitude error
+	112	Ref28				String	---		Reference for Tycho-2 VT magnitude
+	113	GG_mag				Float	mag		Gaia EDR3 G-band mean magnitude
+	114	eGG_mag				Float	mag		Standard error of G-band mean magnitude (Vega) (as computed by CDS)
+	115	Ref29				String	---		Reference for Gaia G-band mean magnitude
+	116	V_mag				Float	mag	*	Johnson V magnitude (540 nm)
+	117	eV_mag				Float	mag		Johnson V magnitude error
+	118	Ref30				String	---		Reference for Johnson V magnitude
+	119	Ra_mag				Float	mag		R-band UCAC3/UCAC4 aperture magnitude (579-642 nm)
+	120	Ref31				String	---		Reference for R-band magnitude
+	121	r_mag				Float	mag	*	SDSS 2.5 m r magnitude (616.5 nm)
+	122	er_mag				Float	mag		SDSS 2.5 m r magnitude error
+	123	Ref32				String	---		Reference for r magnitude
+	124	RP_mag				Float	mag		Gaia EDR3 integrated RP mean magnitude
+	125	eRP_mag				Float	mag		Standard error of RP mean magnitude (Vega) (as computed by CDS)
+	126	Ref33				String	---		Reference for RP magnitude
+	127	i_mag				Float	mag	*	SDSS 2.5 m i magnitude (748.1 nm)
+	128	ei_mag				Float	mag		SDSS 2.5 m i magnitude error
+	129	Ref34				String	---		Reference for i magnitude
+	130	IN_mag				Float	mag		I_N-band USNO-B1 photographic infrared magnitude
+	131	Ref35				String	---		Reference for I_N-band magnitude
+	132	J_mag				Float	mag		J magnitude
+	133	eJ_mag				Float	mag		J magnitude error
+	134	H_mag				Float	mag		H magnitude
+	135	eH_mag				Float	mag		H magnitude error
+	136	Ks_mag				Float	mag		Ks magnitude
+	137	eKs_mag				Float	mag		Ks magnitude error
+	138	QFlag_2M				String	---		JHKs photometric quality flag
+	139	Ref36				String	---		Reference for JHKs magnitudes
+	140	W1_mag				Float	mag		WISE W1 magnitude (3350 nm)
+	141	eW1_mag				Float	mag		WISE W1 magnitude error
+	142	W2_mag				Float	mag		WISE W2 magnitude (4600 nm)
+	143	eW2_mag				Float	mag		WISE W2 magnitude error
+	144	W3_mag				Float	mag		WISE W3 magnitude (11600 nm)
+	145	eW3_mag				Float	mag		WISE W3 magnitude error
+	146	W4_mag				Float	mag		WISE W4 magnitude (22100 nm)
+	147	eW4_mag				Float	mag		WISE W4 magnitude error
+	148	QFlag_WISE			String	---		W1W2W3W4 photometric quality flag
+	149	Ref37				String	---		Reference for W1W2W3W4 magnitudes
+	150	Multiplicity				String	---	*	Multiplicity indicator
+	151	WideWDS				String	---		Washington Double Star identifier of wide pair(s)
+	152	Widerho_arcsec				String	arcsec		Angular separation between components of wide pair(s)
+	153	eWiderho_arcsec				String	arcsec		Angular separation error
+	154	Ref38				String	---		Reference for angular separation
+	155	WidecompanionName				String	---		Name of wide companion
+	156	WideCompanionSpT				String	---		Spectral type of wide companion
+	157	CloseWDS				String	---		Washington Double Star identifier of close pair(s)
+	158	Closerho_arcsec				String	arcsec		Angular separation between components of close pair(s)
+	159	eCloserho_arcsec				String	arcsec		Angular separation error
+	160	Ref39				String	---		Reference for angular separation
+	161	CloseCompanionSpT				String	---		Spectral type of close companion
+	162	RV				String	---		In past or current radial-velocity searches for planets
+	163	Planet				String	---		Known exoplanet flag
+	164	Ref40				String	---		Reference for planet(s) discovery
+	165	PlanetNum				Short	---		Number of discovered exoplanets
+	166	LoRes_spectrum				String	---		Available low resolution spectra 
+	167	HiRes_spectrum				String	---		Available high resolution spectra 
+	168	LoRes_imaging				String	---		Available low resolution imaging 
+	169	HiRes_imaging				String	---	*	Available high resolution imaging
+	170	Class				String	---	*	Priority class
+	171	Survey				String	---	*	Survey membership
+	172	Notes				String	---		Annotations
+	173	Gaia_id_1				Long	---		Gaia EDR3 source identifier for primaries
+	174	2MASS_id				Long	---		2MASS identifier
+	175	TIC_id				Long	---		TIC identifier
+    
+
+*Remarks*
+
+Column	Remark
+
+1	"Karmn" acronym plus "J" for the standard equinox of J2000.0 plus "HHMMm+DDd" for truncated equatorial coordinates 
+	plus "N", "S", "E" or "W" if two stars (in a close binary system) have the same "HHMMm+DDd" string. The right-most 
+	digit of the fields HHMMm and DDd should be computed as m=floor(SS/6) and d=floor(MM/6), respectively. 
+
+2	Name formatted to be interpreted by Simbad. Priority for the given discovery or common-used name: 
+		1. Proper name (e.g. Barnard's star)
+		2. Variable in constellation (e.g. V2500 Oph)
+		3. Henry Draper (e.g. HD 95735)
+		4. Gliese-Jahreiss (e.g. GJ 699; only if GJ < 3000)
+		5. Bonner Durchmusterung (e.g. BD+40 3796)
+		6. Luyten (e.g. LP 666-009)
+		7. Giclas (e.g. G 140-24; only if unique Giclas designation)
+		8. Luyten (e.g. LHS 37)
+		9. Other designations in chronological order (e.g. StKM, 1RXS, TYC, LSPM, etc.).
+
+3	A for primary, B for secondary, C for tertiary, etc. AB, BC, Aab (=Aa,Ab), ABC, etc. for unresolved systems.
+
+7, 8	Propagated to the J2000.0 epoch using Gaia EDR3 when its full astrometric solution (5 parameters) is available. Using 
+	2MASS coordinates otherwise.
+	
+13	K7 V = -1, M0.0 = 0.0, M0.5 = 0.5, ... , M9.5 = 9.5.
+
+22	Luminosity derived from spectral energy distribution (SED) fitting using VOSA, as described by Cif20.
+	
+25	Radii and their error calculated using the Stefan-Boltzmann law under the black body approximation.
+
+28	Masses and their errors calculated using the mass-radius relation derived from eclipsing binaries in Schw19.
+	
+35:44	References preceded with "a" indicate that the value has been taken from a confirmed physically bound companion.
+
+45	The RUWE is expected to be around 1.0 for sources where the single-star model provides a good fit to the astrometric 
+	observations. A value significantly greater than 1.0 (say, >1.4) could indicate that the source is non-single or 
+	otherwise problematic for the astrometric solution (from the Gaia data release documentation).
+
+58	AB Dor: AB Doradus
+	Arg: Argus
+	bet Pic: Beta Pictoris
+	Car: Carina
+	Cas: Castor
+	Col: Columba
+	HS: Hyades supercluster
+	Her-Lyr: Hercules-Lyra
+	Hya: Hyades
+	IC: IC 2391
+	LA: Local Association
+	Tau: Taurus
+	TucHor: Tucana-Horologium
+	UMa: Ursa Major
+		
+62	YD: Young disc
+	D: Thin disc
+	TD-D: Transition thin-thick disc
+	TD: Thick disc
+	H: Halo
+
+63	"=" if exact value
+	"<" if upper limit
+	">" if lower limit
+
+101	The source catalog of this magnitude is prioritised as follows: UCAC4 > APASS9
+	
+107	The source catalog of this magnitude is prioritised as follows: UCAC4 > SDSS9 > APASS9 > PanSTARRS1
+	
+116	The source catalog of this magnitude is prioritised as follows: UCAC4 > APASS9
+	
+121	The source catalog of this magnitude is prioritised as follows: UCAC4 > SDSS9 > APASS9 > CMC15 > PanSTARRS1
+
+127	The source catalog of this magnitude is prioritised as follows: UCAC4 > SDSS9 > APASS9 > PanSTARRS1
+
+150	"Single" for stars not known to be in multiple systems
+	"Wide" for companions at angular separations greater than 5 arcsec
+	"Resolved Physical" for bound companions at angular separations less than 5 arcsec
+	"Resolved Visual" for unbound companions at angular separations less than 5 arcsec
+	"EB" for eclipsing binaries (including stars with transiting exoplanets)
+	"SB" for spectroscopic binaries (SB1, SB2, ST3)
+	There can be combinations of these flags
+
+169	(AstraLux): Stars observed before 2012 Jan by the MPIA AstraLux team
+	(FastCam): Stars observed by Jodar et al. 2013
+	(LuckyCam): Stars observed by Law et al. 2008
+
+170	Alpha (high - the Heaven)
+	Beta (intermediate - the Limbo)
+	Gamma (low - the Hell)
+	Delta (null - close binaries)
+	'+' after class: star upgraded by CARMENES
+	'-' after class: star downgraded by CARMENES
+
+171	"GTO" for guaranteed time of observation objects
+	"Legacy" for Legacy Objects
+	"TOI" for TESS objects of interest
+
+
+*References:*
+
+2M	Skrutskie et al. 2006 (AJ, 131, 1163)
+AD17a	Astudillo-Defru et al. 2017 (A&A, 605, 11)
+AD17b	Astudillo-Defru et al. 2017 (A&A, 602, 88)
+AF15a	Alonso-Floriano et al. 2015a (A&A, 577, 128)
+AF15b	Alonso-Floriano et al. 2015b (A&A, 583, 85)
+Aff16	Affer et al. 2016 (A&A, 593, 117)
+Aff19	Affer et al. 2016 (A&A, 622, 193)
+Agr86	Agrawal et al. 1986 (MNRAS, 219, 225)
+AllWISE	Cutri et al. 2013 (yCat, 2328, 0)
+Amb73	Ambartsumian et al. 1973 (Afz, 9, 461)
+Ans15	Ansdell et al. 2015 (ApJ, 798, 41)
+AP75	Andersen & Pettersen 1975 (A&A, 41, 459)
+AP9	Henden et al. 2009 (AAS, 41, 669)
+App10	Apps et al. 2010 (PASP, 122, 156)
+AS11	Alonso-Santiago 2011 (BSc thesis, Universidad Complutense de Madrid, Spain)
+Bale02	Balega et al. 2002 (A&A, 385, 87)
+Bale04	Balega et al. 2004 (A&A, 422, 627)
+Bale06	Balega et al. 2006 (BSAO, 59, 20)
+Bale07	Balega et al. 2007 (AstBu, 62, 339)
+Bale13	Balega et al. 2013 (AstBu, 68, 53)
+Barn14	Barnes et al. 2014 (MNRAS, 439, 3094)
+Barn17	Barnes et al. 2017 (MNRAS, 471, 811)
+Baro18	Baroch et al. 2018 (A&A, 619, 32)
+Baro21	Baroch et al. 2021 (Submitted to A&A)
+Bau20	Bauer et al. 2020 (A&A, 640, 50)
+Bene00	Benedict et al. 2000 (AJ, 120, 1106)
+Benn17	Benneke et al. 2017 (ApJ, 834, 187)
+Berf10	Bergfors et al. 2010 (A&A, 520, 54)
+Berh10	Bernhard et al. 2010 (OEJV, 123, 1)
+Bern10	Bernat et al. 2012 (ApJ, 756, 8)
+Beu04	Beuzit et al. 2004 (A&A, 425, 997)
+BF77	Bopp & Fekel 1977 (PASP, 89, 65)
+BG06	Bertout & Genova 2006 (A&A, 1, 1)
+Bidd14	Biddle et al. 2014 (MNRAS, 443, 1810)
+Bide85	Bidelman 1985 (ApJS, 59, 197)
+Bide88	Bidelman 1988 (Bulletin d'Information du Centre de Donnees Stellaires, 34, 35)
+Bil13	Biller et al. 2013 (ApJ, 777, 160)
+Blu20	Bluhm et al. 2020 (A&A, 639, 132)
+Blu21	Bluhm et al. 2021 (Submitted to A&A)
+Boc05	Bochanski et al. 2005 (AJ, 130, 1871)
+Bon05	Bonfils et al. 2005 (A&A, 443, 15)
+Bon12	Bonfils et al. 2012 (A&A, 546, 27)
+Bon13	Bonfils et al. 2013 (A&A, 549, 109)
+Bon18	Bonfils et al. 2018 (A&A, 613, 25)
+Bow15	Bowler et al. 2015 (ApJS, 216, 7)
+Bri98	Briceno et al. 1998 (AJ, 115, 2074)
+Bri99	Briceno et al. 1999 (AJ, 118, 1354)
+Bro10	Browning et al. 2010 (A&A, 139, 504)
+Burg10	Burgasser et al. 2010 (ApJ, 725, 1045)
+Burg15	Burgasser et al. 2015 (AJ, 149, 104)
+Burn09	Burningham et al. 2009 (MNRAS, 395, 1237)
+Burt14	Burt et al. 2014 (ApJ, 789, 114)
+Bus98	Buscombe et al. 1998 (General Catalogue of MK Spectral Classification (13th))
+Butl04	Butler et al. 2004 (ApJ, 617, 580)
+Butl06	Butler et al. 2006 (PASP, 118, 1685)
+Butt10	Butters et al. 2010 (A&A, 520, 10)
+Cab07	Caballero 2007 (ApJ, 667, 520)
+Cab09	Caballero 2009 (A&A, 507, 251)
+Cab10	Caballero et al. 2010 (A&A, 520, 91)
+CC16	Cortes-Contreras 2016 (PhD thesis, Universidad Complutense de Madrid, Spain)
+CC17	Cortes-Contreras et al. 2017 (A&A, 597, 47)
+CC21	Cortes-Contreras et al. (in prep.)
+Chr78	Christy 1978 (AJ, 38, 1225)
+Cif20	Cifuentes et al. 2020 (A&A, 642, 115)
+Clos03	Close et al. 2003 (ApL, 587, 407)
+CM02	Christian & Mathioudakis 2002 (AJ, 123, 2796)
+CM20	Canto Martins et al. 2020 (ApJS, 250, 20)
+CR02	Cruz & Reid 2002 (AJ, 123, 2828)
+Cru03	Cruz et al. 2003 (AJ, 126, 2421)
+CS81	Christy & Strand 1981 (AJ, 86, 909)
+Cve12	Cvetkovic et al. 2012 (AJ, 144, 80)
+DA19	Diez-Alonso et al. 2019 (A&A, 621, 126)
+Dae07	Daemgen et al. 2007 (ApJ, 654, 558)
+Dah17	Dahn et al. 2017 (AJ, 154, 147)
+Davi16	David et al. 2016 (Natur, 534, 658)
+Davs14	Davison et al. 2014 (AJ, 147, 26)
+Daw05	Dawson et al. 2005 (PASP, 117, 1)
+Dea05	Deacon et al. 2005 (A&A, 435, 363)
+Dea12	Deacon et al. 2012 (ApJ, 757, 100)
+Del98	Delfosse et al. 1998 (A&A, 331, 581)
+Del99a	Delfosse et al. 1999a (A&A, 341, 63)
+Del99b	Delfosse et al. 1999b (A&A, 344, 897)
+Des12	Deshpande et al. 2012 (AJ, 144, 99)
+Des13	Deshpande et al. 2013 (AJ, 146, 156)
+Dev08	Devor et al. 2008 (AJ, 135, 850)
+Dia19	Diaz et al. 2019 (A&A, 625, 17)
+Die18	Díez Alonso et al. 2018 (MNRAS, 476, 50)
+Dit14	Dittmann et al. 2014 (ApJ, 784, 156)
+Dit17	Dittmann et al. 2017 (Natur, 544, 333)
+DM88	Duquennoy & Mayor 1988 (A&A, 200, 135)
+Doc06	Docobo et al. 2006 (AJ, 132, 994)
+Dor11	Dorda 2011 (MSc thesis, Universidad Complutense de Madrid, Spain)
+Dra14	Drake et al. 2014 (ATel, 6121, 1)
+Drei20	Dreizler et al. 2020 (A&A, 644, 127)
+Dres9	Dressing et al. 2019 (AJ, 158, 87)
+DSSI	Horch et al. 2011 (AJ, 141, 45)
+Dup19	Dupuy et al. 2019 (AJ, 158, 174)
+Ell14	Elliott et al. 2014 (A&A, 568, 26)
+Ell15	Elliott et al. 2015 (A&A, 580, 88)
+End03	Endl et al. 2003 (AJ, 126, 3099)
+End08	Endl et al. 2008 (ApJ, 673, 1165)
+Eng09	Engle et al. 2009 (AIPC, 1135, 221)
+EPIC	Huber et al. 2017 (yCat, 4034, 0)
+Eva75	Evans 1975 (MNSSA, 34, 51)
+Fin18	Finch et al. 2018 (AJ, 155, 176)
+Fle88	Fleming et al. 1988 (ApJ, 331, 958)
+For09	Forveille et al. 2009 (A&A, 493, 645)
+Fou18	Fouque et al. 2018 (MNRAS, 475, 1960)
+Fri13	Frith et al. 2013 (MNRAS, 435, 2161)
+FZ16	Finch & Zacharias 2016 (AJ, 151, 160)
+GA20	Gonzalez-Alvarez et al. 2020 (A&A, 637, 93)
+GaC09	Gatewood & Coban 2009 (AJ, 137, 402)
+Gai14	Gaidos et al. 2014 (MNRAS, 443, 2561)
+GALEX	Bianchi et al. 2011 (MNRAS, 411, 2770)
+Gali18	Galli et al. 2018 (ApJ, 859, 33)
+Gall15	Gallardo 2015 (MSc thesis, Universidad Complutense de Madrid, Spain)
+Ger99	Gershberg et al. 1999 (A&AS, 139, 555)
+Gia12	Giacobbe et al. 2012 (MNRAS, 424, 3101)
+Gig10	Gigoyan et al. 2010 (Ap, 53, 123)
+Gilh18	Gilhool et al. 2018 (AJ, 155, 38)
+Gill16	Gillon et al. 2016 (Natur, 533, 221)
+Gill17	Gillon et al. 2017 (Natur, 542, 456)
+Giz02	Gizis et al. 2002 (AJ, 123, 3356)
+Giz98	Gizis et al. 1998 (AJ, 115, 2053)
+Gle05	Glebocki and Gnacinski 2005 (Vizier catalog, III/244/catalog)
+Gol10	Goldman et al. 2010 (MNRAS, 404, 1140)
+GR97	Gizis & Reid 1997 (PASP, 109, 849)
+Gra03	Gray et al. 2003 (AJ, 126, 2048)
+Gra06	Gray et al. 2006 (AJ, 132, 161)
+Hag10	Haghighipour et al. 2010 (ApJ, 715, 271)
+Ham99	Hambaryan et al. 1999 (A&A, 345, 121)
+Harl96	Harlow 1996 (AJ, 112, 2222)
+Haro75	Haro et al. 1975 (IBVS, 1031, 1)
+Hart04	Hartman et al. 2004 (AJ, 128, 1761)
+Hart10	Hartman et al. 2010 (MNRAS, 408, 475)
+Hart11	Hartman et al. 2011 (AJ, 141, 166)
+Hart86	Hartman et al. 1986 (ApJ, 309, 275)
+Hart87	Hartmann et al. 1987 (AJ, 93, 907)
+Hen06	Henry et al. 2006 (AJ, 132, 2360)
+HIP1	Perryman et al. 1997 (A&A, 323, 49)
+HIP2	van Leeuwen 2007 (A&A, 474, 653)
+Hob18	Hobson et al. 2018 (A&A, 618, 103)
+Hob19	Hobson et al. 2019 (A&A, 625, 18)
+Hoj86	Hojaev A. S. 1986 (Afz, 24, 65)
+Hor10	Horch et al. 2010 (AJ, 139, 205)
+Hor11	Horch et al. 2011 (AJ, 141, 45)
+Hor12	Horch et al. 2012 (AJ, 143, 10)
+Hou10	Houdebine 2010 (MNRAS, 407, 1657)
+Hou12	Houdebine 2012 (MNRAS, 421, 3180)
+How10	Howard et al. 2010 (ApJ, 721, 1467)
+How14	Howard et al. 2014 (ApJ, 794, 51)
+HS89	Hartmann & Stauffer 1989 (AJ, 97, 873)
+Ire08	Ireland et al. 2008 (ApJ, 678, 463)
+Irw09	Irwin et al. 2009 (ApJ, 701, 1436)
+Irw11	Irwin et al. 2011 (ApJ, 727, 56)
+JAb74	Joy & Abt 1974 (ApJS, 28, 1)
+Jac87	Jackson et al. 1987 (LNP, 291, 103)
+Jah08	Jahreiss et al. 2008 (A&A, 484, 575)
+Jan12	Janson et al. 2012 (ApJ, 754, 44)
+Jan14	Janson et al. 2014 (ApJ, 789, 102)
+Jao05	Jao et al. 2005 (AJ, 129, 1954)
+JAp09	Johnson & Apps 2009 (ApJ, 699, 833)
+Jeff18	Jeffers et al. 2018 (A&A, 614, 76)
+Jefr95	Jeffries 1995 (MNRAS, 273, 559)
+Jen09	Jenkins et al. 2009 (ApJ, 704, 975)
+Jen52	Jenkins 1952 (General Catalogue of Trigonometric Stellar Parallaxes (ed. 1952))
+Jod13	Jodar et al. 2013 (MNRAS, 429, 859)
+Joh07	Johnson et al. 2007 (AJ, 670, 833)
+Joh10	Johnson et al. 2010 (PASP, 122, 149)
+Jon16	Jones et al. 2016 (ApJ, 817, 1)
+Kam18	Kaminski et al. 2018 (A&A, 618, 115)
+Karmn	Computed by the Consortium using public resources (nan)
+KE02	Koen & Eyer 2002 (MNRAS, 331, 45)
+Kem20	Kemmer et al. 2020 (A&A, 642, 236)
+Kes18	Kesseli et al. 2018 (AJ, 155, 225)
+Kim15	Kim 2015 (MSc thesis, Heidelberg Universitaet, Germany)
+Kira12	Kiraga 2012 (Acta Astron., 62, 67)
+Kirk16	Kirkpatrick et al. 2016 (ApJS, 224, 36)
+Kirk91	Kirkpatrick et al. 1991 (ApJS, 77, 417)
+Klu12	Klutsch et al. 2012 (SF2A, 2012, 357)
+Koe10	Koen et al. 2010 (MNRAS, 403, 1949)
+Kon10	Konopacky et al. 2010 (ApJ, 711, 1087)
+KS07	Kiraga & Stepien 2007 (AcA, 57, 149)
+KS13	Kiraga & Stepien 2013 (Acta Astron., 63, 53)
+Lafa20	Lafarga et al. 2019 (A&A, 636, 36)
+Lafr07	Lafreniere et al. 2007 (ApJ, 670, 1367)
+Lal19	Lalitha et al. 2019 (A&A, 627, 116)
+Lamp07	Lampens et al. 2007 (A&A, 464, 641)
+Law08	Law et al. 2008 (MNRAS, 384, 150)
+LDS	Luyten 1940-87 (Proper motion survey with the 48-inch Schmidt Telescope, XXI-XXV-XIX-XL-L-LXIV-LV-LXXI)
+Lei93	Leinert et al. 1993 (A&A, 278, 129)
+Lep03	Lepine et al. 2003 (AJ, 125, 1598)
+Lep09	Lepine et al. 2009 (AJ, 137, 4109)
+Lep13	Lepine et al. 2013 (AJ, 145, 102)
+Lip52	Lippincott 1952 (ApJ, 115, 582)
+Lla14	Llamas 2014 (BSc thesis, Universidad Complutense de Madrid, Spain)
+Lod05	Lodieu et al. 2005 (A&A, 440, 1061)
+LS06	Lopez-Santiago et al. 2006 (ApJ, 643, 1160)
+LS10	Lopez-Santiago et al. 2010 (A&A, 514, 97)
+LSPM	Lepine & Shara 2005 (AJ, 129, 1483)
+Lu19	Lu et al. 2019 (ApJS, 243, 28)
+Luc17	Luck et al. 2017 (AJ, 153, 21)
+Luq18	Luque et al. 2018 (A&A, 620, 171)
+Luq19	Luque et al. 2019 (A&A, 628, 39)
+MA10	Martinez-Arnaiz et al. 2010 (A&A, 520, 79)
+Mac13	Mace et al. 2013 (ApJ, 777, 36)
+Malg07	Malogolovets et al. 2007 (AstBu, 62, 117)
+Malk12	Malkov et al. 2012 (A&A, 546, 69)
+Malo13	Malo et al. 2013 (ApJ, 762, 88)
+Malo14	Malo et al. 2014 (ApJ, 788, 81)
+Marc01	Marcy et al . 2001 (ApJ, 556, 296)
+Marc87	Marcy et al. 1987 (PASP, 99, 490)
+Marc98	Marcy et al. 1998 (ApJL, 505, 147)
+Marf21	Marfil et al. 2021 (Submitted to A&A)
+Mari90	Mariotti et al. 1990 (A&A, 230, 77)
+Mart07	Martinache et al. 2007 (ApJ, 661, 496)
+Mart09	Martinache et al. 2009 (ApJ, 695, 1183)
+May09	Mayor et al. 2009 (A&A, 507, 487)
+MB03	Mohanty & Basri 2003 (ApJ, 583, 451)
+MC92	Marcy & Chen 1992 (ApJ, 390, 550)
+McC01	McCarthy et al. 2001 (AJ, 121, 3259)
+McQ13	McQuillan et al. 2013 (MNRAS, 432, 1203)
+Med20	Medina et al. 2020 (ApJ, 905, 107)
+Mel13	Melikyan et al. 2013 (Ap, 56, 8)
+Men19	Ment et al. 2019 (AJ, 157, 32)
+Mes10	Messina et al. 2010 (A&A, 520, 15)
+Met15	Metodieva et al. 2015 (MNRAS, 446, 3878)
+Moc02	Mochnacki et al. 2002 (AJ, 124, 2868)
+Mond19	Mondrik et al. 2019 (ApJ, 870, 10)
+Mone14	Montet et al. 2014 (ApJ, 781, 28)
+Mons01	Montes et al. 2001 (MNRAS, 328, 45)
+Mont06	Montagnier et al. 2006 (A&A, 460, 19)
+Mora09	Morales et al. 2009 (ApJ, 691, 1400)
+Mori08	Morin et al. 2008 (MNRAS, 390, 567)
+Mori10	Morin et al. 2010 (MNRAS, 407, 2269)
+MR14	Martinez-Rodriguez 2014 (MSc thesis, Universidad Complutense de Madrid, Spain)
+Mul74	Mullan 1974 (ApJ, 192, 149)
+Mul89	Mullan et al. 1989 (ApJ, 343, 400)
+Nag19	Nagel et al. 2019 (A&A, 622, 153)
+New14	Newton et al. 2014 (AJ, 147, 20)
+New16a	Newton et al. 2016a (ApJ, 821, 93)
+New16b	Newton et al. 2016b (PhD thesis, Harvard University, USA)
+New17	Newton et al. 2017 (ApJ, 834, 85)
+New18	Newton et al. 2018 (AJ, 156, 217)
+Nid02	Nidever et al. 2002 (ApJS, 141, 503)
+Nor07	Norton et al. 2007 (A&A, 467, 785)
+Now20	Nowak et al. 2020 (A&A, 642, 173)
+Oel18	Oelkers et al. 2018 (AJ, 155, 39)
+Pal20	Pallé et al. 2020 (A&A, 638, 61)
+Pas19	Passegger et al. 2019 (A&A, 627, 161)
+PB06	Phan-Bao et al. 2006 (A&A, 446, 515)
+PB97	Pesch & Bidelman 1997 (PASP, 109, 643)
+Per17a	Perger et al. 2017 (A&A, 598, 26)
+Per17b	Perger et al. 2017 (A&A, 608, 63)
+Per19	Perger et al. 2019 (A&A, 624, 123)
+Pet06	Pettersen 2006 (Obs, 126, 397)
+Pet75	Pettersen 1975 (A&A, 41, 87)
+Pet91	Pettersen 1991 (MnSAI, 62, 217)
+PG80	Pettersen & Griffin 1980 (Obs, 100, 198)
+PMSU	Hawley et al. 1996 (AJ, 112, 2799)
+Poj02	Pojmanski 2002 (Acta Astron., 52, 397)
+Pou04	Pourbaix et al. 2004 (A&A, 424, 727)
+Pov09	Poveda et al. 2009 (ApJ, 706, 343)
+PPMXL	Roeser et al. 2010 (AJ, 139, 2440)
+Pra06	Pravdo et al. 2006 (ApJ, 649, 389)
+Pre01	Preibisch et al. 2001 (AJ, 121, 1040)
+PS1	Biver et al. 2018 (A&A, 619, 127)
+Rae20	Raetz et al. 2020 (A&A, 637, 22)
+Rag09	Raghavan et al. 2009 (ApJ, 690, 394)
+Raj13	Rajpurohit et al. 2013 (A&A, 556, 15)
+Ram20	Ramsay et al. 2020 (MNRAS, 497, 2320)
+RAVE5	Kunder et al. 2017 (AJ, 153, 75)
+RB09	Reiners & Basri 2009 (ApJ, 705, 1416)
+RB10	Reiners & Basri 2010 (ApJ, 710, 924)
+Reb10	Rebull et al. 2010 (ApJS, 186, 259)
+Reid02	Reid et al. 2002 (AJ, 124, 519)
+Reid03	Reid et al. 2003 (AJ, 126, 3007)
+Reid04	Reid et al. 2004 (AJ, 128, 463)
+Reid07	Reid et al. 2007 (AJ, 133, 2825)
+Rein12	Reiners et al. 2012 (AJ, 143, 93)
+Rein18	Reiners et al. 2018 (A&A, 612, 49)
+Rev20	Revilla 2020 (MSc thesis, Universidad Complutense de Madrid, Spain)
+RG97	Reid & Gizis 1997 (AJ, 113, 2246)
+Ria06	Riaz et al. 2006 (AJ, 132, 866)
+Rib18	Ribas et al. 2018 (Natur, 563, 365)
+Rid15	Riddle et al. 2015 (ApJ, 799, 4)
+Rie10	Riedel et al. 2010 (AJ, 140, 897)
+Rie14	Riedel et al. 2014 (AJ, 147, 85)
+Rie17	Riedel et al. 2017 (ApJ, 840, 87)
+Riv05	Rivera et al. 2005 (ApJ, 634, 625)
+Riv10	Rivera et al. 2010 (ApJ, 719, 890)
+Rob13	Robertson et al. 2013 (ApJ, 774, 147)
+Sad21	Sadegi et al. (in prep.)
+Sche15	Schoefer 2015 (MSc thesis, Goettingen Universitaet, Germany)
+Sche17	Schoefer 2017 (PhD thesis, Goettingen Universitaet, Germany)
+Sche19	Schoefer et al. 2019 (A&A, 623, 44)
+Schl10	Schlieder et al. 2010 (AJ, 140, 119)
+Schl12a	Schlieder et al. 2012 (AJ, 143, 80)
+Schl12b	Schlieder et al. 2012 (AJ, 144, 109)
+Schm07	Schmidt et al. 2007 (AJ, 133, 2258)
+Schn19	Schneider et al. 2019 (AJ, 157, 234)
+Scho05	Scholz et al. 2005 (A&A, 442, 211)
+Schw19	Schweitzer et al. 2019 (A&A, 625, 68)
+SDSS9	Adelman-McCarthy et al. 2012 (yCat, 5139, 0)
+SH86	Stauffer & Hartmann 1986 (ApJS, 61, 531)
+Shk09	Shkolnik et al. 2009 (ApJ, 699, 649)
+Shk10	Shkolnik et al. 2010 (ApJ, 716, 1522)
+Shk12	Shkolnik et al. 2012 (ApJ, 758, 56)
+Ski12	Skiff 2012 (Catalogue of Stellar Spectral Classifications)
+Skr21	Skrzypinski 2021 (MSc thesis, Universidad Complutense de Madrid, Spain)
+SM15	Suarez Mascareno et al. 2015 (MNRAS, 452, 2745)
+SM16	Suarez Mascareno et al. 2016 (A&A, 595, 12)
+SM17a	Suarez Mascareno et al. 2017a (A&A, 597, 108)
+SM17b	Suarez Mascareno et al. 2017b (MNRAS, 478, 4772)
+SM18	Suarez Mascareno et al. 2018 (A&A, 612, 89)
+Sot21	Soto et al. 2021 (Submitted to A&A)
+Sou18	Soubiran et al. 2018 (A&A, 616, 7)
+Spe16	Sperauskas et al. 2016 (A&A, 596, 116)
+Sta97	Stauffer et al. 1997 (ApJ, 475, 604)
+Stef20	Stefansson et al. 2020 (AJ, 159, 100)
+Ster95	Stern et al. 1995 (ApJ, 448, 683)
+Stra77	Strand 1977 (AJ, 82, 745)
+Strs09	Strassmeier 2009 (A&ARv, 17, 251)
+Sve54	Svestka 1954 (BAIC, 5, 4)
+Tal08	Tal-Or et al. 2018 (A&A, 614, 122)
+Tam08	Tamazian et al. 2008 (AJ, 136, 974)
+Tan10	Tanner et al. 2010 (PASP, 122, 1195)
+Tet11	Tetzlaff et al. 2011 (MNRAS, 410, 190)
+TGAS	Brown et al. 2017 (A&A, 595, 2)
+Tok06	Tokovinin et al. 2006 (A&A, 450, 681)
+Tok10	Tokovinin et al. 2010 (AJ, 139, 743)
+Tok15	Tokovinin et al. 2015 (AJ, 150, 50)
+Tok92	Tokovinin 1992 (A&A, 256, 121)
+Tor06	Torres et al. 2006 (A&A, 460, 695)
+Tor08	Torres et al. 2008 (Handbook of Star Forming Regions, Volume II, 757)
+TP86	Tomkin & Pettersen 1986 (AJ, 92, 1424)
+TR02	Torres & Ribas 2002 (ApJ, 567, 1140)
+Tri18	Trifonov et al. 2018 (A&A, 609, 117)
+Tuo14	Tuomiet al. 2014 (MNRAS, 441, 1545)
+TYC2	Hog et al. 2000 (A&A, 355, 27)
+UCAC3	Zacharias et al. 2010 (AJ, 139, 6)
+UCAC4	Zacharias et al. 2013 (AJ, 145, 2)
+Udr07	Udry et al. 2007 (A&A, 469, 43)
+US-B1	Monet et al. 2003 (AJ, 125, 984)
+vAl95	van Altena et al. 1995 (General Catalogue of Trigonometric Stellar Parallaxes)
+Vri20	Vrijmoet et al. 2020 (AJ, 160, 5)
+Wat06	Watson 2006 (SAS Symposium, 25, 47)
+WD15	Ward-Duong et al. 2015 (MNRAS, 449, 2618)
+Wein16	Weinberger et al. 2016 (AJ, 152, 24)
+West15	West et al. 2015 (ApJ, 812, 3)
+Whi07	White et al. 2007 (AJ, 133, 2524)
+Whi89	White et al. 1989 (ApJS, 71, 895)
+Win19	Winters et al. 2019 (AJ, 157, 6)
+WISE	Cutri et al. 2012 (yCat, 2311, 0)
+Woi00	Woitas et al. 2000 (A&A, 353, 253)
+Wol17	Wolthoff 2017 (MSc thesis, Heidelberg Universitaet, Germany)
+Wri16	Wright et al. 2016 (ApJ, 817, 20)
+Yi14	Yi et al. 2014 (AJ, 147, 33)
+Zas09	Zasche et al. 2009 (AJ, 138, 664)
+Zec09	Zechmeister et al. 2009 (A&A, 505, 859)
+Zec19	Zechmesiter et al. 2019 (A&A, 627, 49)
+Zuc04	Zuckerman et al. 2004 (ApJ, 613, 65)
+Zuc11	Zuckerman et al. 2011 (ApJ, 732, 61)
